@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-image: url("hulksmash.jpg");
+  background-color: black;
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
