@@ -3,38 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <div class="title_img">
+  <header>
+    <div class="title_img">
       <h1>Car Smash</h1>
-      <img class="header_img"  src="hulksmash.jpg" alt="Hulk smashing a car"/>
-      </div>
-      <nav></nav>
-    </header>
-    <section>
-      <div>
-        <h1>Car Smash</h1>
-        <h4>Onsite Accident Form, Collet all the Information you need. In one place</h4>
-        
-      </div>
-     <form action="https://formsubmit.co/joel.m.hayward@gmail.com" method="POST">
-       <p>Your Information</p>
-     <input type="text" name="name" required placeholder="Your Name">
-     <input type="email" name="email" required placeholder="Your Email">
-     <input type="text" name="licenseNumber" required placeholder="DG254374">
-     <input type="file" id="imgLicense" accept="image/png, image/jpg"
-     <div id="display_img"></div>
-     <p>Their Information</p>
-     <input type="text" name="name" required placeholder="Their Name">
-     <input type="email" name="email" required placeholder="Their Email">
-     <input type="text" name="licenseNumber" required placeholder="DG254374">
-     <input type="file" id="imgLicense" accept="image/png, image/jpg"
-     <div id="displace_img"></div>
-     <button type="submit">Send</button>
-</form>
-    </section>
+      <img class="header_img" src="hulksmash.jpg" alt="Hulk smashing a car" />
+    </div>
+    <nav></nav>
+  </header>
+  <body>
+    <div>
+      <h4>
+        Onsite Accident Form, Collet all the Information you need. In one place
+      </h4>
+    </div>
+    <form action="https://formsubmit.co/joel.m.hayward@gmail.com" method="POST">
+      <p>Their Information</p>
+      <label>
+        <input type="text" name="name" required placeholder="Their Name" />
+      </label>
+      <label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Their Email" /></label
+      ><br />
+
+      <label>
+        <input
+          type="text"
+          name="licenseNumber"
+          required
+          placeholder="DG254374" /></label
+      ><br />
+
+      <label>
+        <input type="file" id="imgLicense" accept="image/png, image/jpg" />
+      </label>
+      <label>
+        <div class="display_img1">Image of Drivers License</div>
+      </label>
+
+      <p>Your Information</p>
+      <label>
+        <input type="text" name="name" required placeholder="Your Name" />
+      </label>
+      <label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your Email" /></label
+      ><br />
+
+      <label>
+        <input
+          type="text"
+          name="licenseNumber"
+          required
+          placeholder="DG254374" /></label
+      ><br />
+      <label>
+        <input type="file" id="imgLicense" accept="image/png, image/jpg"
+      /></label>
+      <div class="display_img2"></div>
+      <br />
+
+      <button type="submit">Send</button>
+    </form>
   </body>
+  <footer></footer>
 </html>
