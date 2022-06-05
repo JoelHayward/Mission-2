@@ -4,14 +4,15 @@
   margin: 0;
 }
 
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   flex-direction: column;
-}
+} */
 
+/* PRELOAD allows for website to load in the background */
 #preloader {
   background: rgb(49, 181, 173) url(crash.gif) no-repeat center;
   height: 100%;
@@ -20,50 +21,75 @@ body {
   z-index: 2000;
 }
 
+
+/* Header CSS section */
+.header{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  object-fit: contain;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* justify-content: center;
+  align-items: center; */
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+.header_img {
+  opacity: 50%;
+  /* width: 100%;
+  height: auto; */
+  background-size: 100% 100%;
+
+}
+
+/* Form CSS section */
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
 label,
 input {
   display: block;
+  border-radius: 5px;
 }
 label {
   margin-bottom: 10px;
 }
-.title_img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: 500px;
- 
-}
 
-.title {
-  /* margin-top: 100px; */
-}
 
-.header_img {
-  z-index: -1;
-  opacity: 50%;
-  width: 100%;
-  position: fixed;
-  object-fit: contain;
-  overflow: hidden;
- 
-}
-
+/* Upload of their driver license */
 .display_img1 {
   width: 375px;
   height: 211px;
   border: 1px solid black;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 }
 
+/* Upload of your drivers license */
 .display_img2 {
   width: 375px;
   height: 211px;
   border: 1px solid black;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 }
 
 footer {

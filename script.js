@@ -1,13 +1,7 @@
 //PRELOADER
 
-setTimeout(() => {document.getElementById("preloader").style.display = "none"}, '4000')
-
+setTimeout(() => {document.getElementById("preloader").style.display = "none"}, '10000')
 setTimeout();
-
-// const loader = document.getElementById("preloader");
-// window.addEventListener("load", function () {
-//   loader.style.display = "none";
-// });
 
 //Upload image for their drivers license in display_img1
 const imgLicense = document.querySelector("imgLicense");
