@@ -1,4 +1,18 @@
-//Upload image
+//PRELOADER
+const timePeriodInMs = 100000;
+
+setTimeout(function () {
+  document.getElementById("preloader").style.display = "none";
+});
+
+timePeriodInMs();
+
+// const loader = document.getElementById("preloader");
+// window.addEventListener("load", function () {
+//   loader.style.display = "none";
+// });
+
+//Upload image for their drivers license in display_img1
 const imgLicense = document.querySelector("imgLicense");
 const upload_image = "";
 

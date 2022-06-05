@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -11,20 +12,40 @@ body {
   flex-direction: column;
 }
 
-label, input {
+#preloader {
+  background: rgb(49, 181, 173) url(crash.gif) no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+}
+
+label,
+input {
   display: block;
 }
 label {
   margin-bottom: 10px;
 }
 .title_img {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  /* height: 500px; */
+}
+
+.title {
+  /* margin-top: 100px; */
 }
 
 .header_img {
+  z-index: -1;
   opacity: 50%;
   width: 100%;
-  height: 500px;
+  position: fixed;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .display_img1 {
