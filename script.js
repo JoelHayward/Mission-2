@@ -1,11 +1,8 @@
 //PRELOADER
-const timePeriodInMs = 100000;
 
-setTimeout(function () {
-  document.getElementById("preloader").style.display = "none";
-});
+setTimeout(() => {document.getElementById("preloader").style.display = "none"}, '4000')
 
-timePeriodInMs();
+setTimeout();
 
 // const loader = document.getElementById("preloader");
 // window.addEventListener("load", function () {
