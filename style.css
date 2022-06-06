@@ -52,6 +52,17 @@
   background-size: 100% 100%;
 
 }
+/* How to use section */
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 50px;
+}
+
+.step {
+  padding: 20px;
+}
 
 /* Form CSS section */
 

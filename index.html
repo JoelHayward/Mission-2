@@ -13,72 +13,123 @@
     <header class="header">
       <div class="title-section">
         <div class="title">
-        <h1 >Car Smash</h1>
-        <h4>
-          Onsite Accident Form, Collet all the Information you need<br> in one place and send it to yourself
-        </h4>
-      </div>
+          <h1>Car Smash</h1>
+          <h4>
+            Onsite Accident Form, Collet all the Information you need<br />
+            in one place and send it to yourself
+          </h4>
+        </div>
         <img class="header_img" src="hulksmash.jpg" alt="Hulk smashing a car" />
       </div>
-      
     </header>
+    <section class="howToUse">
+      <div class="steps">
+        <p class="step">Fill in the other drivers information below and push add</p>
+        <p class="step">Fill in your information below and push add</p>
+        <p class="step">Fill in any witness information and push add</p>
+        <p class="step">Once complete, press the send button and be linked to your email</p>
+      </div>
+    </section>
     <div class="form-section">
-    <form action="https://formsubmit.co/joel.m.hayward@gmail.com" method="POST">
-      <p>Their Information</p>
-      <label>
-        <input type="text" name="name" required placeholder="Their Name" />
-      </label>
-      <label>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Their Email" /></label
-      ><br />
+      <form>
+      <!-- action="https://formsubmit.co/joel.m.hayward@gmail.com"
+        method="POST" -->
+      <!-- THEIR INFORMATION -->
+        <p>Driver Information</p>
+        <label>
+          <input id="their_name" type="text" name="name" required placeholder="Their Name" />
+        </label>
+        <label>
+          <input
+          id="their_email"
+            type="email"
+            name="email"
+            required
+            placeholder="Their Email" /></label
+        ><br />
+        <label>
+          <input
+          id="their_number"
+            type="number"
+            name="phone_number"
+            required
+            placeholder="Their phone number"
+          /></label
+        ><br />
+        <label>
+          <input
+          id="their_rego"
+            type="text"
+            name="registration"
+            required
+            placeholder="Their vehicle registration"
+          /></label
+        ><br />
 
-      <label>
-        <input
-          type="text"
-          name="licenseNumber"
-          required
-          placeholder="DG254374" /></label
-      ><br />
+        <label>
+          <input
+          id="their_license"
+            type="text"
+            name="licenseNumber"
+            required
+            placeholder="DG254374" /></label
+        ><br />
 
-      <label>
-        <input type="file" id="imgLicense" accept="image/png, image/jpg" />
-      </label>
-      <label>
-        <div class="display_img1">Image of Drivers License</div>
-      </label>
+        <label>
+          <input id="license_img" type="file" id="imgLicense" accept="image/png, image/jpg" multiple="true"/>
+        </label>
+        <!-- <label>
+          <div class="display_img1">Image of Drivers License</div>
+        </label> -->
+<!-- ADD IMAGES OF DAMAGE TO THEIR CAR -->
 
-      <p>Your Information</p>
-      <label>
-        <input type="text" name="name" required placeholder="Your Name" />
-      </label>
-      <label>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Your Email" /></label
-      ><br />
 
-      <label>
-        <input
-          type="text"
-          name="licenseNumber"
-          required
-          placeholder="DG254374" /></label
-      ><br />
-      <label>
-        <input type="file" id="imgLicense" accept="image/png, image/jpg"
-      /></label>
-      <div class="display_img2"></div>
-      <br />
+        <!-- YOUR INFORMATION
+        <p>Your Information</p>
+        <label>
+          <input type="text" name="name" required placeholder="Your Name" />
+        </label>
+        <label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your Email" /></label
+        ><br />
+        <label>
+          <input
+            type="number"
+            name="phone_number"
+            required
+            placeholder="Your phone number"
+          /></label
+        ><br />
 
-      <button type="submit">Send</button>
-    </form>
-  </div>
+        <label>
+          <input
+            type="text"
+            name="licenseNumber"
+            required
+            placeholder="DG254374" /></label
+        ><br />
+        <label>
+          <input
+            type="text"
+            name="registration"
+            required
+            placeholder="Their vehicle registration"
+          /></label
+        ><br />
+        <label>
+          <input type="file" id="imgLicense" accept="image/png, image/jpg"
+        /></label>
+        <div class="display_img2"></div> -->
+        <br />
+        <!-- ADD IMAGES OF DAMAGE TO YOUR CAR -->
+
+        <button id="btn">Send</button>
+      </form>
+    </div>
   </body>
   <footer></footer>
 </html>
