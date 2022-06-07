@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 /* body {
@@ -21,91 +22,118 @@
   z-index: 2000;
 }
 
-
 /* Header CSS section */
-.header{
+.header {
   text-align: center;
   display: flex;
   width: 100%;
-  max-height: 500px;
-  overflow: hidden;
+  height: 400px;
+  justify-content: end;
   position: relative;
-  object-fit: contain;
   flex-wrap: wrap;
+  background-color: rgb(49, 181, 173);
 }
 
 .title {
   display: flex;
   flex-direction: column;
   position: absolute;
-  /* justify-content: center;
-  align-items: center; */
   top: 50px;
   left: 50px;
   z-index: 2;
 }
+.heading {
+  font-family: Hubballi;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
 
 .header_img {
-  opacity: 50%;
-  /* width: 100%;
-  height: auto; */
-  background-size: 100% 100%;
-
+  padding-right: 50px;
 }
 /* How to use section */
+
+.howToUse {
+  background-color: rgb(254, 254, 255);
+  padding: 50px 50px;
+  margin: 100px;
+}
 
 .steps {
   display: flex;
   justify-content: space-between;
-  margin: 150px 50px;
+  margin: 40px 50px;
 }
 
 .step {
   padding: 20px;
 }
 
+.favcons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
 /* Form CSS section */
+#newDate {
+margin-top: 30px;
+}
 
 .form-section {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  background-color: rgb(49, 181, 173);
 }
-
 
 label,
 input {
   display: block;
   border-radius: 5px;
-}
-label {
-  margin-bottom: 10px;
+  padding: 10px 10px;
 }
 
-
-/* Upload of their driver license */
-.display_img1 {
-  width: 375px;
-  height: 211px;
-  border: 1px solid black;
-  background-position: center;
-  background-size: cover;
+button {
+  background-color: #4eb3ee; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   border-radius: 5px;
 }
 
-/* Upload of your drivers license */
-.display_img2 {
-  width: 375px;
-  height: 211px;
-  border: 1px solid black;
-  background-position: center;
-  background-size: cover;
+#license_img, #first_img, #second_img {
+  background-color: #4eb3ee; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   border-radius: 5px;
+}
+#btn {
+  margin-bottom: 30px;
+}
+.sendBtn {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  margin-bottom: 30px;
 }
 
 footer {
   width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
 }
 
 @media screen and (max-width: 768px) {

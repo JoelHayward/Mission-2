@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:wght@400;500;700&family=League+Gothic&family=Smooch+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Car Accident Form</title>
   </head>
 
   <body>
@@ -13,35 +20,66 @@
     <header class="header">
       <div class="title-section">
         <div class="title">
-          <h1>Car Smash</h1>
+          <h1 class="heading">Car Smash</h1>
           <h4>
             Onsite Accident Form, Collet all the Information you need<br />
             in one place and send it to yourself
           </h4>
         </div>
-        <img class="header_img" src="hulksmash.jpg" alt="Hulk smashing a car" />
+        <img
+          class="header_img"
+          src="crash snip.PNG"
+          alt="van driving into car"
+        />
       </div>
     </header>
     <section class="howToUse">
+      <div class="favcons">
+        <i class="fa fa-address-card" style="font-size:48px;color:red"></i>
+        <i class="fa fa-address-card-o" style="font-size:48px"></i>
+        <i class="fa fa-child" style="font-size:48px"></i>
+        <i class="fa fa-envelope-o" style="font-size:48px"></i>
+      </div>
       <div class="steps">
-        <p class="step">Fill in the other drivers information below and push add</p>
-        <p class="step">Fill in your information below and push add</p>
-        <p class="step">Fill in any witness information and push add</p>
-        <p class="step">Once complete, press the send button and be linked to your email</p>
+       
+          
+          <p class="step">
+            Fill in the other drivers information below and push add
+          </p>
+       
+        
+          
+          <p class="step">Fill in your information below and push add</p>
+       
+         
+          <p class="step">Fill in any witness information and push add</p>
+        
+         
+          <p class="step">
+            Once complete, press the send button and be linked to your email
+          </p>
+        
       </div>
     </section>
     <div class="form-section">
       <form>
-      <!-- action="https://formsubmit.co/joel.m.hayward@gmail.com"
+        <!-- action="https://formsubmit.co/joel.m.hayward@gmail.com"
         method="POST" -->
-      <!-- THEIR INFORMATION -->
+        <!-- THEIR INFORMATION -->
+        <p id="newDate"></p>
         <p>Driver Information</p>
         <label>
-          <input id="their_name" type="text" name="name" required placeholder="Their Name" />
-        </label>
+          <input
+            id="their_name"
+            type="text"
+            name="name"
+            required
+            placeholder="Their Name"
+          /> </label
+        ><br />
         <label>
           <input
-          id="their_email"
+            id="their_email"
             type="email"
             name="email"
             required
@@ -49,87 +87,72 @@
         ><br />
         <label>
           <input
-          id="their_number"
+            id="their_number"
             type="number"
             name="phone_number"
             required
-            placeholder="Their phone number"
-          /></label
+            placeholder="Their phone number" /></label
         ><br />
         <label>
           <input
-          id="their_rego"
+            id="their_rego"
             type="text"
             name="registration"
             required
-            placeholder="Their vehicle registration"
-          /></label
+            placeholder="Their vehicle registration" /></label
         ><br />
 
         <label>
+          <p>License Number</p>
           <input
-          id="their_license"
+            id="their_license"
             type="text"
             name="licenseNumber"
             required
             placeholder="DG254374" /></label
         ><br />
-
-        <label>
-          <input id="license_img" type="file" id="imgLicense" accept="image/png, image/jpg" multiple="true"/>
-        </label>
-        <!-- <label>
-          <div class="display_img1">Image of Drivers License</div>
-        </label> -->
-<!-- ADD IMAGES OF DAMAGE TO THEIR CAR -->
-
-
-        <!-- YOUR INFORMATION
-        <p>Your Information</p>
-        <label>
-          <input type="text" name="name" required placeholder="Your Name" />
-        </label>
+        <!-- ADD AN IMAGE OF YOUR LICENSE -->
+        <p>Add image of license</p>
         <label>
           <input
-            type="email"
-            name="email"
-            required
-            placeholder="Your Email" /></label
+            id="license_img"
+            type="file"
+            id="imgLicense"
+            accept="image/png, image/jpg"
+          /> </label
         ><br />
-        <label>
-          <input
-            type="number"
-            name="phone_number"
-            required
-            placeholder="Your phone number"
-          /></label
-        ><br />
-
-        <label>
-          <input
-            type="text"
-            name="licenseNumber"
-            required
-            placeholder="DG254374" /></label
-        ><br />
-        <label>
-          <input
-            type="text"
-            name="registration"
-            required
-            placeholder="Their vehicle registration"
-          /></label
-        ><br />
-        <label>
-          <input type="file" id="imgLicense" accept="image/png, image/jpg"
-        /></label>
-        <div class="display_img2"></div> -->
-        <br />
         <!-- ADD IMAGES OF DAMAGE TO YOUR CAR -->
+        <p>Add image of damage to car</p>
+        <label>
+          <input
+            id="first_img"
+            type="file"
+            id="imgLicense"
+            accept="image/png, image/jpg"
+          /> </label
+        ><br />
+        <label>
+          <input
+            id="second_img"
+            type="file"
+            id="imgLicense"
+            accept="image/png, image/jpg"
+          />
+        </label>
+        <br />
 
-        <button id="btn">Send</button>
+        <button id="btn">Add</button><br />
+        <div class="sendBtn">
+          <p>
+            (Make sure you have filled and added everything before hitting the
+            send button.)
+          </p>
+          <button id="send">Send</button>
+        </div>
       </form>
     </div>
   </body>
-  <footer></footer>
+  <footer>
+    <p>Copyright &copy; 2022 by Joel Hayward</p>
+  </footer>
 </html>
