@@ -5,7 +5,7 @@ setTimeout(() => {
   document.getElementById("preloader").style.display = "none";
 }, "10000");
 
-//Upload perosns information data to an object
+//Upload perons information data to an object
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn").addEventListener("click", addInfo);
   document.getElementById("send").addEventListener("click", sendInfo);
@@ -34,7 +34,7 @@ const addInfo = (ev) => {
 const sendInfo = (ev) => {
   ev.preventDefault();
   window.open(
-    `mailto:test@example.com?subject=${'Car Accident'}&body=`+theirInformation);
+    `mailto:test@example.com?subject=${'Car Accident'}&body=`+JSON.stringify(theirInformation));
 
 };
 
