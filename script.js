@@ -34,7 +34,7 @@ const addInfo = (ev) => {
 const sendInfo = (ev) => {
   ev.preventDefault();
   window.open(
-    `mailto:test@example.com?subject=${'Car Accident'}&body=`+ encodeURIComponent(theirInformation));
+    `mailto:test@example.com?subject=${'Car Accident'}&body=`+theirInformation);
 
 };
 
